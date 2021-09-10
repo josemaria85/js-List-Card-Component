@@ -1,6 +1,6 @@
-#Guia Para Usar El componente
+# Guia Para Usar El componente
 
-##Parametro [Datos]
+## Parametro [Datos]
 Es el array con los datos que se visualizaran en las cards
 ```
 ejemplo:[
@@ -11,10 +11,10 @@ ejemplo:[
   }
 ]
 ```
-##Parametro [titulo]
+## Parametro [titulo]
 Es el titulo base para mostrar en la card le seguira el id del objeto
 
-##evento (ver) 
+## evento (ver) 
 recoge el elemento pulsado y nos trae un obeto con la operacion realizada y los datos del objeto seleccionado
 ```
 {
@@ -29,7 +29,7 @@ recoge el elemento pulsado y nos trae un obeto con la operacion realizada y los 
 }
 ```
 
-##etiqueta html completa
+## etiqueta html completa
 ```
 <js-list-card [Datos]="datos" [titulo]="titulo" (ver)="Ver($event)"></js-list-card>
 ```
