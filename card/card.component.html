@@ -1,0 +1,27 @@
+<div id="content-card">
+  <div class="card" >
+    <div class="titulo">
+      <h2>{{titulo}}</h2>
+    </div>
+    <div class="decha" *ngIf="dato.Foto!=undefined">
+      <div class="foto" >
+        <img  [src]="dato.Foto" alt="">
+      </div>
+      <div class="sub-foto" *ngIf="piefoto!=undefined">
+        <p><i>{{piefoto}}</i></p>
+      </div>
+    </div>
+    <div class="izda">
+      <div class="datos">
+        <p *ngFor="let key of keys" ><strong>{{key}}:</strong>{{dato[key]}} </p>
+      </div>
+    </div>
+    <div class="botonera">
+      <p class="botonera-botones">
+        <a (click)="Ver(dato)">Ver</a>
+        <a  (click)="Editar(dato)" >Modificar</a>
+        <a  (click)="Borrar(dato)" >Borrar</a>
+      </p>
+    </div>
+  </div>
+</div>

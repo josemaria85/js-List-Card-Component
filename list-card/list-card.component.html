@@ -1,0 +1,2 @@
+<js-card *ngFor="let item of Datos" [dato]="item"  [piefoto]="item.Nombre" [titulo]="titulo+'-'+item.Id" (modificar)="Editar($event)" (borrar)="Borrar($event)" (ver)="Ver($event)"></js-card>
+
